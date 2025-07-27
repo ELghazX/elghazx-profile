@@ -1,5 +1,5 @@
-import { Link } from "react-router"
 import Button from "../components/Button"
+import pfp from "../assets/profile_picture.webp"
 
 function Home() {
 
@@ -30,16 +30,11 @@ function Home() {
           </div>
         </div>
 
-        {/* Right Content - Yellow Box */}
-        {/* <div className="bg-yellow-400 rounded-lg h-96 lg:h-[400px] flex items-center justify-center shadow-lg "> */}
-        <div className="hidden lg:flex bg-yellow-400 rounded-lg h-96 lg:h-[400px] items-center justify-center shadow-lg">
-          <div className="text-center text-black">
-            <div className="w-32 h-32 bg-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-              <span className="text-4xl font-bold">MG</span>
-            </div>
-            <p className="text-sm opacity-75">Portfolio Image</p>
-          </div>
+        <div className="hidden lg:flex bg-yellow-400 rounded-lg h-96 lg:h-[400px] items-center justify-center drop-shadow-[_8px_8px_rgba(55,65,81,1)]  overflow-hidden">
+          <img src={pfp} alt="ghazali" className="" />
         </div>
+
+        {/* <div className="flex bg-red-400 h-96"> </div> */}
       </div>
     </main>
   );

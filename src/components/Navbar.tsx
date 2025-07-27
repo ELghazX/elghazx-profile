@@ -18,7 +18,7 @@ export default function Navbar() {
   const menuItems = [
     { id: 'home', label: 'HOME', path: '/' },
     { id: 'project', label: 'PROJECT', path: '/project' },
-    { id: 'awards', label: 'AWARDS', path: '/awards' },
+    { id: 'achivement', label: 'ACHIVEMENT', path: '/achivement' },
     { id: 'about', label: 'ABOUT', path: '/about' },
     { id: 'resume', label: 'RESUME', path: '/resume' },
     { id: 'contact', label: 'CONTACT', path: '/contact' }
@@ -31,9 +31,9 @@ export default function Navbar() {
           <Link
             key={item.id}
             to={item.path}
-            className={`px-3 py-2 text-sm font-bold font-display uppercase tracking-wide transition-colors duration-200 ${location.pathname === item.path
+            className={`text-gray-900 px-3 py-2 text-sm font-bold font-display uppercase tracking-wide transition-colors duration-200 ${location.pathname === item.path
               ? 'underline underline-offset-8 '
-              : 'text-gray-900 hover:underline underline-offset-8'
+              : 'text-gray-100 hover:underline underline-offset-8'
               }`}
           >
             {item.label}

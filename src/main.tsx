@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Home />} />
-        <Route path="/awards" element={<Home />} />
+        <Route path="/achivement" element={<Home />} />
         <Route path="/about" element={<Home />} />
         <Route path="/resume" element={<Home />} />
         <Route path="/contact" element={<Home />} />
