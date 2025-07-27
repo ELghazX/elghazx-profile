@@ -10,7 +10,7 @@ import { Link } from "react-router";
 // }
 
 export default function Button({ content, to, onClick, className = "" }: { content: string; to?: string; onClick?: () => void; className?: string }) {
-  const baseClasses = "font-bold border-1 bg-[#FFD65A] hover:bg-yellow-400 p-4 rounded-[16px] drop-shadow-[_3px_4px_rgba(55,65,81,1)] transition-colors duration-200 uppercase tracking-wide text-gray-700 ";
+  const baseClasses = "font-bold border-1 bg-[#FFD65A] hover:bg-yellow-400  p-4 rounded-[16px] drop-shadow-[_3px_4px_rgba(55,65,81,1)] transition-colors duration-200 uppercase tracking-wide text-gray-700 ";
 
   if (to) {
     return (

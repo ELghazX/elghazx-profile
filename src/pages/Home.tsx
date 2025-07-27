@@ -4,8 +4,8 @@ import pfp from "../assets/profile_picture.webp"
 function Home() {
 
   return (
-    <main className="container mx-auto px-4 py-16 ">
-      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+    <main className="mx-auto px-4 py-16 ">
+      <section className="pb-16 border-b-1 grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         {/* Left Content */}
         <div className="text-center space-y-8 lg:text-right ">
           <div>
@@ -22,9 +22,11 @@ function Home() {
               I love building reliable backend systems, automating workflows, and learning Linux-based infrastructures.
             </p>
           </div>
+          {/* TODO: Tambahkan sosmed interaktif, dan resume. Taruh di kotak kuning*/}
 
           {/* Action Buttons */}
-          <div className="flex justify-center lg:justify-end space-x-4 ">
+          {/* <div className="flex justify-center lg:justify-end space-x-4 "> */}
+          <div className="grid  gap-4 grid-rows-2 lg:flex justify-center lg:justify-end lg:space-x-4 ">
             <Button content="VIEW PROJECTS" to="/project" />
             <Button content="MY RESUME" to="/resume" />
           </div>
@@ -35,7 +37,23 @@ function Home() {
         </div>
 
         {/* <div className="flex bg-red-400 h-96"> </div> */}
-      </div>
+      </section>
+
+      <section className="py-8 items-center max-w-6xl mx-auto">
+        <header className="flex justify-center">
+          <h2 className="text-2xl lg:text-2xl font-bold text-gray-700 uppercase">Experience</h2>
+        </header>
+        <div className="">
+          <div className="mt-8 gap-4 grid grid-cols-2">
+            <Button content="Work" className="bg-white"></Button>
+            <Button content="Studies"></Button>
+          </div>
+
+
+        </div>
+
+
+      </section>
     </main>
   );
 }

@@ -17,10 +17,8 @@ export default function Navbar() {
 
   const menuItems = [
     { id: 'home', label: 'HOME', path: '/' },
-    { id: 'project', label: 'PROJECT', path: '/project' },
-    { id: 'achivement', label: 'ACHIVEMENT', path: '/achivement' },
     { id: 'about', label: 'ABOUT', path: '/about' },
-    { id: 'resume', label: 'RESUME', path: '/resume' },
+    { id: 'project', label: 'PROJECT', path: '/project' },
     { id: 'contact', label: 'CONTACT', path: '/contact' }
   ];
 
